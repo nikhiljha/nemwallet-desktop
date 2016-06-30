@@ -41,13 +41,18 @@ app.on('ready', function () {
   });
 
   // Create a new window and let it load in the background.
-  var win = new BrowserWindow({width: 800, height: 600, show: false, title: "NEM Wallet for " + system});
+  var win = new BrowserWindow({autoHideMenuBar: true, nodeIntegration: false, width: 1280, height: 720, show: false, title: "NEM Wallet for " + system});
 
   // When it is closed, delete the window.
   win.on('closed', function() {
     win = null;
   });
 
-  win.loadURL('http://localhost:3000');
+  // Don't let the page title change!
+  win.on('page-title-updated', function(event) {
+    event.preventDefault();
+  });
+
+  win.loadURL('http://localhost:3000/#!/login');
   win.show();
 })
