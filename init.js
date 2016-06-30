@@ -45,6 +45,7 @@ app.on('ready', function () {
 
   // When it is closed, delete the window.
   win.on('closed', function() {
+    server.close();
     win = null;
   });
 
