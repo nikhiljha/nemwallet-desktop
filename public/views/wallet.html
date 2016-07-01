@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9">
-                <h2>Wallet {{name}} </h2>
+                <h2>Wallet: {{name}} </h2>
             </div>
             <div class="col-md-3">
                 <p ng-class="{'connecting':'bg-warning', 'connected':'bg-success'}[connectionStatus]">{{connectionStatus}} <span ng-show="nisHeight">(height: {{nisHeight}})</span></p>
