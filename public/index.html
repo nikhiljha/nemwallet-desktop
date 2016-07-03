@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <base href="/lightwallet/">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NEM Lite Wallet</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://bootswatch.com/sandstone/bootstrap.min.css">
     <script>
     window.nodeRequire = require;
     delete window.require;
     delete window.exports;
     delete window.module;
     </script>
-    <script src="frameless_window.js"></script>
+    <base href="/lightwallet/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NEM Lite Wallet</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://bootswatch.com/sandstone/bootstrap.min.css">
+    <script src="http://localhost:3000/frameless_window.js"></script>
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> -->
 	<link rel="shortcut icon" href="favicon.ico" />
 </head>
@@ -37,7 +38,9 @@
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
-            <li><a id="close-window-button" style="-webkit-app-region: no-drag" href="#" onclick="closeWindow();">Exit</a></li>
+            <li><a id="close-window-button" style="-webkit-app-region: no-drag" href="#" onclick="closeWindow();">-</a></li>
+            <li><a id="close-window-button" style="-webkit-app-region: no-drag" href="#" onclick="closeWindow();">#</a></li>
+            <li><a id="close-window-button" style="-webkit-app-region: no-drag" href="#" onclick="closeWindow();">X</a></li>
           </ul>
 
         </div>

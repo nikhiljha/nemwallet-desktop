@@ -112,7 +112,7 @@ app.on('ready', function () {
   });
 
   // Create a new window and let it load in the background.
-  var win = new BrowserWindow({frame: false, autoHideMenuBar: true, nodeIntegration: false, width: 1280, height: 720, show: false, title: "NEM Wallet for " + system});
+  var win = new BrowserWindow({frame: false, autoHideMenuBar: true, nodeIntegration: true, width: 1280, height: 720, show: false, title: "NEM Wallet for " + system});
 
   // When it is closed, delete the window.
   win.on('closed', function() {
