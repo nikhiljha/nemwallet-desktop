@@ -22,11 +22,12 @@
   },
   "homepage": "https://github.com/nikhiljha/nemwallet-desktop#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "electron-squirrel-startup": "^1.0.0"
   },
   "devDependencies": {
-    "electron-prebuilt": "^0.36.10",
-    "electron-squirrel-startup": "^1.0.0"
+    "electron-builder": "^5.10.5",
+    "electron-prebuilt": "^0.36.10"
   },
   "build": {
     "appId": "nem.wallet",
