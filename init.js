@@ -2,8 +2,7 @@
 
 // We are based on electron, so we need to initiate it.
 const electron = require('electron');
-const app = require('app');
-const BrowserWindow = require('browser-window')
+const {app, BrowserWindow} = electron;
 var system = "Unknown OS";
 var os = require('os')
 if(require('electron-squirrel-startup')) return;
